@@ -1,14 +1,15 @@
 ﻿using System;
-using MODUL7_103022400116;
 using System.IO;
 using System.Text.Json;
 
-class Program
+internal class Program
 {
-    static void Main() {
+    static void Main(string[] args) {
+        FilmFavorit_103022400116 filmFavorit = new FilmFavorit_103022400116();
+        filmFavorit.ReadJSON();
+        
+        Console.WriteLine();
         FilmFavorit_103022400035 films = new FilmFavorit_103022400035();
         films.ReadJSON();
     }
 }
-
-
